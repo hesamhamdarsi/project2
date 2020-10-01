@@ -31,6 +31,8 @@ func (l license) deriverInfo() {
 	fmt.Printf("lISENCE ID: %d\n", l.lisenceID)
 }
 
+// we say any value that has the deriverInfo() method, has also the following type
+//notice: if the body of interface was emtpy, that means that all values could be belonged to this interface
 type driverskill interface {
 	deriverInfo()
 }
