@@ -13,7 +13,7 @@ type author struct {
 // Method with a receiver
 // of author type
 // func(reciver_name Type) method_name(parameter_list)(return_type)
-// using method, it wasn't need as we pass the receiver as an argument and change it's properties
+// we pass the receiver as an argument and change it's properties
 func (a author) show() {
 
 	fmt.Println("Author's Name: ", a.name)
@@ -38,6 +38,7 @@ func main() {
 	res.show()
 
 	fmt.Println("###############################################")
+
 	//using function for the same target
 	//need each individual parameter to be passed to function as argument
 	// but using method, it wasn't need as we pass the receiver as an argument and change it's properties

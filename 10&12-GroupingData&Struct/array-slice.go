@@ -22,7 +22,8 @@ func main() {
 
 	//composite litteral: to group together values of the same type
 	//composite litteral construct values for structs, arraye and maps
-	//this one is slice
+	//this one is slice. slices are like array but you wont get them fixed size and they are enabled
+	//to resize
 	//https://www.godesignpatterns.com/2014/05/arrays-vs-slices.html
 	myComposite := []int{1, 2, 3, 4, 5, 6}
 	fmt.Println(myComposite)

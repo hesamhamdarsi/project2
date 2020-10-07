@@ -15,7 +15,7 @@ func main() {
 func sum(number ...int) (int, int) {
 	sum := 0
 	multi := 1
-	for _, v := range number {
+	for i, v := range number {
 		sum = sum + v
 		multi = multi * v
 		//why I used i=i? because when we use i in for loop, we have to use it somewhere.

@@ -34,6 +34,8 @@ func main() {
 	}
 
 	//deleting from Map
+	myvalue, mystatus = myMap["hesam"]
+	fmt.Println(mystatus)
 	delete(myMap, "hesam")
 	fmt.Println(myMap)
 
@@ -41,6 +43,8 @@ func main() {
 	//before
 	delete(myMap, "hesam")
 	fmt.Println(myMap)
+	myvalue, mystatus = myMap["hesam"]
+	fmt.Println(mystatus)
 	//after
 	if myvalue, mystatus := myMap["Majid"]; mystatus {
 		fmt.Println(myvalue)

@@ -11,4 +11,10 @@ func main() {
 		fmt.Printf("%+v\n", id)
 	}(42)
 
+	x := func(id int) int {
+		fmt.Printf("%+v\n", id)
+		return id + 1
+	}(42)
+	fmt.Printf("%+v\n", x)
+
 }

@@ -17,11 +17,12 @@ func main() {
 	fmt.Println(output)
 
 	//OR very shorter
-	//x = func1 ---> x() = func1()+()
+	//x = func1() ---> x() = func1()+()
 	fmt.Println(func1()())
 }
 
 //func <function_identifier> <returned type>
+//func       func1()            func()int
 func func1() func() int {
 	return func() int {
 		return 253

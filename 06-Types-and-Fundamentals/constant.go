@@ -8,12 +8,18 @@ const (
 	z int = 12
 	y     = "my name is hesam"
 )
+
+//notice: when you assign IOTA to a variable in a constant group "between ( and )"
+//the other variables in this constant increment that automaticaly.
 const (
 	k = iota
 	f = iota
 	g
 	h = iota
 )
+
+//notice: if you now define another constant group like const ( a iota ; b=iota; ...) it will start
+//from zero again in that group
 
 func main() {
 
@@ -27,11 +33,14 @@ func main() {
 	fmt.Printf("%T\t%+v\n", z, z)
 	fmt.Printf("%T\t%+v\n\n", y, y)
 	//iota is a type of constant which is int and increament automatically
+	//everytime IOTA is called with any new variable, it will increase one unit
+	//but that value never change again
 	fmt.Println("IOTA")
 	fmt.Println("-------------------")
 	fmt.Printf("%T\t%+v\n", k, k)
-	fmt.Printf("%T\t%+v\n", f, f)
 	fmt.Printf("%T\t%+v\n", g, g)
+	fmt.Printf("%T\t%+v\n", f, f)
 	fmt.Printf("%T\t%+v\n", h, h)
+	fmt.Printf("%T\t%+v\n", k, k)
 
 }

@@ -1,6 +1,7 @@
 //pointers are a type
 //pointers shows the address of memory
 //pointers type starts with *
+//pointer *int means address where an int is stored
 package main
 
 import "fmt"

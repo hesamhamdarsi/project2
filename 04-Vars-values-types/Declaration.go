@@ -11,7 +11,7 @@ var m int
 var n string
 
 var o = "new string"
-var p = `this is another 
+var p string = `this is another 
 "new string"`
 
 func main() {

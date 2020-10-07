@@ -25,6 +25,7 @@ func main() {
 		fmt.Printf("erro: %+v", err)
 	}
 	//the output is []byte, so you need to convert it to string using one of these methods
+	//different outputs (writer interfaces)
 	os.Stdout.Write(result)
 	fmt.Println("")
 	fmt.Println(string(result))

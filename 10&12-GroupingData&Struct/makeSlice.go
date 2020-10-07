@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 
+	//to give the initial size and capacity to a slice
 	myComposite := make([]int, 10, 100)
 
 	fmt.Println(myComposite[:])

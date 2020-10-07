@@ -21,6 +21,7 @@ func main() {
 	fmt.Println(MyPassword)
 	fmt.Println(pass)
 
+	//check the entered password by client
 	err = bcrypt.CompareHashAndPassword(pass, []byte(MyPassword))
 	if err != nil {
 		fmt.Println("error: ", err)

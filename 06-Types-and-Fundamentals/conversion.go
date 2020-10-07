@@ -7,6 +7,8 @@ import (
 func main() {
 
 	s := "My name is Hesam"
+	fmt.Println(s[0])
+	fmt.Println(string(s[0]))
 	fmt.Println(s)
 	fmt.Printf("%T\n", s)
 	//converting string to slice of bytes (asci codes)
