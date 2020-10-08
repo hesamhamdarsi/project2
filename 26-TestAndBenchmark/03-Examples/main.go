@@ -3,9 +3,11 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/hesamhamdarsi/project2/26-TestAndBenchmark/03-Examples/calculate"
 )
 
 func main() {
 
-	fmt.Println(calculate.sum(1, 2))
+	fmt.Println(calculate.Sum(1, 2))
 }
