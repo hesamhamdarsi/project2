@@ -1,3 +1,5 @@
+//IOTA increase the consts that are in the same () gradually
+
 package main
 
 import "fmt"
@@ -42,3 +44,13 @@ func main() {
 	//this means if we convert 1024 which is decimal to binary it would be 10000000000 (2^10+0+0+...+0)
 
 }
+
+//oter examples:
+/*
+const (
+	a = 1-(iota*7)
+	b
+	c
+	d
+)
+*/

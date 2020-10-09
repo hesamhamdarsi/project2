@@ -1,10 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
 	//to give the initial size and capacity to a slice
+	// make([]type, size, capacity)
 	myComposite := make([]int, 10, 100)
 
 	fmt.Println(myComposite[:])
@@ -20,5 +24,12 @@ func main() {
 	fmt.Println(myComposite[:])
 	fmt.Println(len(myComposite))
 	fmt.Println(cap(myComposite))
+
+	fmt.Println(strings.Repeat("#", 20))
+	//copy a slice to another slice:
+	slice1 := []int{1, 2, 3}
+	slice2 := make([]int, len(slice1))
+	copy(slice2, slice1)
+	fmt.Println(slice2)
 
 }

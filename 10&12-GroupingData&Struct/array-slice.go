@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+	"unsafe"
+)
 
 func main() {
 	//array
@@ -54,5 +58,12 @@ func main() {
 	//deleting from slice, for instace we want to remove 3,4
 	myComposite = append(myComposite[:2], myComposite[4:]...)
 	fmt.Println(myComposite[:])
+
+	fmt.Println(strings.Repeat("#", 20))
+
+	//checking allocated size of memory using unsafe.Sizeof
+	fmt.Printf("this slice memory size in byte is: %d\n", unsafe.Sizeof(myComposite))
+
+	//notice: size of array is much more than slice
 
 }
