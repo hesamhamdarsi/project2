@@ -60,4 +60,35 @@ func main() {
 	fmt.Println(PosPersonB)
 	fmt.Println(PosPersonA.pi.FirstName, "-", PosPersonA.pi.LastName, "-", PosPersonA.pi.ID, "-", PosPersonA.positions)
 	fmt.Println(PosPersonB.pi.FirstName, "-", PosPersonB.pi.LastName, "-", PosPersonB.pi.ID, "-", PosPersonB.positions)
+
+	//update a field:
+	PosPersonA.pi.FirstName = "Ali"
+	fmt.Println(PosPersonA)
+
+	//unlike the Map, you can compare to strunct together. for instance you can check if
+	//PosPersonA == PosPersonB
+
+	//ulike the slices, you can duplicate a struct using A:=B or A=B
+
+	//anynomous struct-1:
+	persion1 := struct {
+		FirstName, LastName string
+		ID                  int
+	}{
+		FirstName: "majid",
+		LastName:  "Majidi",
+		ID:        12121212,
+	}
+	_ = persion1
+
+	//anynomous struct-2 (any type can ve defined only one time, otherwise we'll face issue for calling)
+	type people struct {
+		string
+		int
+		bool
+	}
+
+	b1 := people{"Hesam", 12, true}
+	fmt.Println(b1.string)
+
 }

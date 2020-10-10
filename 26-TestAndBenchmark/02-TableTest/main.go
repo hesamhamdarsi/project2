@@ -1,8 +1,3 @@
-//1- you need to create a file with name of "...._test.go" in the same directory as your package is
-//2-run one/more func with a signature of "func TestXxx("t *testing.T") for any function you want to test
-//		t *testing.T means a pointer to type T from package testing
-//3- go .test
-
 package main
 
 import "fmt"

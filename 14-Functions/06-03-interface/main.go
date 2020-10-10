@@ -1,10 +1,3 @@
-//we define a type of struct (2 nested struct in this example): person and license
-//we define an instance of the main struct called: person1
-//we define a method for the main struct: driverInfo
-//we define a type of interface: driversklill
-//we will put our method under this interface
-//we define a funtion which get the instance of our interface as argument
-
 package main
 
 import "fmt"
