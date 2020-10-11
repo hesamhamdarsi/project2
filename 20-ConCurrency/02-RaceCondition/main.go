@@ -1,4 +1,5 @@
 // https://blog.regehr.org/archives/490
+//data race happens when many goroutins access to the same address of value in memory to do their change
 // here we want to check
 // for one test use go run
 // for second test use go run -race > this one shows if there is ant data race. we need to fix data race later

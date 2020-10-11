@@ -2,6 +2,7 @@
 //i want to return ood digits to a slice
 //even digits to a slice
 //quit result to an int
+//select is only used in channels
 package main
 
 import "fmt"

@@ -1,5 +1,5 @@
-// we've used go run -race > this shown there is data race. we need to fix data race later
-// we do it via mutex function. though this function, thread will lock a variable until it finish its job
+// we've used go run -race > this shown there is data race. we need to fix data race
+// one way is we do it via mutex function. though this function, thread will lock a variable until it finish its job
 // then this variable would be accessible for the other threads
 // the counter will return 100 at the end of the execute.
 // this is what we call Synchronization
